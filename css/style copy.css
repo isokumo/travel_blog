@@ -1,0 +1,169 @@
+@import url('font_Pacifico.css');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('remixicon.css');
+@import url('grid.css');
+body{
+    margin: 0;
+    font-family: "Noto Sans KR", sans-serif;
+    background: url('../images/background-white-map.png') no-repeat 126px top,
+                url('../images/background.png') repeat-x left top;
+                
+    color: #000;
+    font-size: 15px;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+a:hover{
+    color: #555;
+}
+.serif{
+    font-family: "Playfair Display", serif;
+}
+.pacifico{
+    font-family: "Pacifico", serif;
+}
+.container{
+    width: 1340px;
+}
+.text-center{
+    text-align: center;
+}
+.d-flex{
+    display: flex;
+}
+.align-certer{
+    align-items: center;
+}
+.align-end{
+    align-items: flex-end;
+}
+.justify-between{
+    justify-content: space-between;
+}
+/********* HEADER ********/
+header{
+    padding: 35px 30px 120px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height:30px ;   
+}
+nav .snsbox a{
+    margin-right: 8px;
+    font-size: 20px;
+}
+.searchbox a{
+    font-size: 20px;
+}
+nav a{
+    color: #757575;
+}
+nav a:hover{
+    color: #000;
+}
+nav a.act{
+    color: #000;
+}
+ul.main{
+    list-style-type:none ;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    text-transform: uppercase;
+    width: 520px;
+    justify-content: space-between;
+}
+a.logo{
+    display: block;
+    width: 160px;
+    height: 160px;
+    background: url(../images/logo.png) no-repeat center;
+    background-size:245px ;
+    margin: 35px auto 0;
+    border-radius: 50%;
+}
+
+/************ HERO SECTION **************/
+.hero{
+    width: 100%;
+    overflow: hidden;
+}
+.hero h1{
+    font-size: 64px;
+    font-weight: 300;
+    margin: 0;
+}
+.hero p{
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: -5%;
+}
+.col-30{
+    flex: 0 0 30%;
+    max-width: 30%;
+}
+.col-20{
+    flex: 0 0 20%;
+    max-width: 20%;
+}
+.h-img{
+   margin-bottom: -4px;
+}
+.h-img img{
+    width: 100%;
+}
+.hero-box{
+    background: url(../images/background-all-map.png) no-repeat center;
+    position: relative;
+    display :flex;
+    justify-content: center;   
+}
+.hero-box img{
+    width: 100%
+}
+.hero-card{
+    position: relative;
+    padding: 85px 75px;
+    background-color: #fff;
+    box-shadow: 4px 4px 20px 0 rgba(0, 0, 0, 0.15);
+    top: -440px;
+}
+.hero-card h1{
+    font-size: 50px;
+    font-weight: 300;
+    margin: 0;
+}
+.hero-card p{
+    line-height: 30px;
+    font-size: 16px;
+    margin-bottom: 20px
+}
+.signbox{
+    text-align: right;
+}
+.signbox img{
+    width: 120px;
+}
+/********* section video ***********/
+section.video{
+    background: url(../images/video-background.png) repeat-x;
+    min-height: 1000px;
+}
+.airline-box{
+    position: relative;
+    display :flex;
+    justify-content: center; 
+    padding: 0;
+    
+}
+.vimg1{
+    margin: 0;
+    padding: 0;
+}
+.video-img{
+    border: 1px solid #ababab;
+}
