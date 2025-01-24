@@ -475,3 +475,45 @@ a.viewall{
     height: 100%;
     object-fit: cover;
 }
+/*********** Footer section ***********/
+footer{
+    background-color: #ffe9e4; 
+    margin: 0;
+    padding: 0;
+    height: 420px;
+}
+footer nav{
+    display :flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 170px;
+}
+ul.footer-nav{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    width: 580px;
+}
+ul.footer-nav{
+    text-transform: uppercase;
+}
+div.sns-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0 ;
+    width : 180px;
+    position: relative;
+    top: 0;
+    left: calc(50% - 90px);
+}
+.sns-box a{
+    font-size: 23px;
+}
+.copyright{
+    padding-top: 25px;
+    border-top: 1px solid #ababab;
+}
+.copyright p{
+    margin: 0;
+}
