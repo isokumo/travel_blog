@@ -349,7 +349,35 @@ h1.partner-title{
     height: 100%;
 
 }
-
+.close{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    z-index: 100;
+    cursor: pointer;
+    transition: all 300ms;
+}
+/* .close:hover{
+    transform: rotate(360deg);
+} */
+.close>span{
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: rgba(100, 100, 100, .8);
+    box-shadow: 0 0 6px rgba(0, 0, 0, .2);
+}
+.close:hover>span{
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+.close>span:first-child{
+    transform:rotate(45deg);
+}
+.close>span:last-child{
+    transform:translate(0, -1px) rotate(-45deg);
+}
 /****************** Best Places ******************/
 .best{
     margin-top: 90px;

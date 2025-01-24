@@ -36,6 +36,8 @@ $(document).ready(function(){
         $('.vdo-popup-back').fadeIn(400);
     });
 
-
+    $('.close').click(function(){
+        $('.vdo-popup-back').fadeOut(500);
+    });
 
 });
