@@ -36,8 +36,16 @@ $(document).ready(function(){
         $('.vdo-popup-back').fadeIn(400);
     });
 
+    //close 버튼 눌러서 닫기
     $('.close').click(function(){
         $('.vdo-popup-back').fadeOut(500);
+    });
+
+    //overlay된 바탕화면 눌러서 닫기
+    $('.vdo-popup-back').click(function(e){
+        if($(e.target).is('#vdo-back')){
+            $(this).fadeOut(500);
+        }
     });
 
 });
