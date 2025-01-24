@@ -20,10 +20,19 @@
             <!--메뉴-->
             <ul class="main">
                 <li><a href="#" class="act">home</a></li>
-                <li><a href="#">about me</a></li>
-                <li><a href="#">destination <i class="ri-arrow-down-s-line"></i></a></li>
-                <li><a href="#">photos</a></li>
-                <li><a href="#">work with me</a></li>   
+                <li><a href="#about">about me</a></li>
+                <li class="p-relative"><a href="#">destination <i class="ri-arrow-down-s-line"></i></a>
+                    <div class="sub">
+                        <a href="#">프랑스 파리</a>
+                        <a href="#">독일 마인츠</a>
+                        <a href="#">이태리 로마</a>
+                        <a href="#">중국 상하이</a>
+                        <a href="#">일본 오사카</a>
+                    </div>
+                </li>
+                <li><a href="#video">video</a></li>
+                <li><a href="#best">best places</a></li>
+                <li><a href="#workme">work with me</a></li>   
             </ul>
             <!--search-->
             <div class="searchbox">
@@ -56,7 +65,7 @@
                     <div class="col-offset-3 col-7">
                         <img src="images/h-4.jpg" alt="h-4">
                     </div>
-                    <div class="col-offset-6 col-6 hero-card">
+                    <div class="col-offset-6 col-6 hero-card" id="about">
                         <h1 class="pacifico">Hello I'm Soony!</h1>
                         <p class="serif">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nisl tincidunt eget nullam non. Quis hendrerit dolor magna eget est lorem ipsum dolor sit
                         </p> 
@@ -107,32 +116,40 @@
         <a href="#" class="subscribe"><i class="ri-youtube-fill"></i> subscribe</a>
         <div class="vod d-flex">
             <div class="vod-box">
-                <video class="myvideo">
+                <video class="myvideo" muted>
                     <source src="vod/vod (1).mp4" type="video/mp4">
                     웹 브라우저가 video를 인식하지 못합니다. 업그레이드하세요.
                 </video>
-                <div class="myvideo-btn"></div>
+                <div class="myvideo-btn" data-vdo="vod (1).mp4"></div>
                 <p class="text-center">Australia`s Most Beautiful<br>
                     Island on a Budget</p>
             </div> 
             <div class="vod-box">
-                <video class="myvideo">
+                <video class="myvideo" muted>
                     <source src="vod/vod (2).mp4" type="video/mp4">
                     웹 브라우저가 video를 인식하지 못합니다. 업그레이드하세요.
                 </video>
-                <div class="myvideo-btn"></div>
+                <div class="myvideo-btn" data-vdo="vod (2).mp4"></div>
                 <p class="text-center">Australia`s Most Beautiful<br>
                     Island on a Budget</p>
             </div> 
             <div class="vod-box">
-                <video class="myvideo">
+                <video class="myvideo" muted>
                     <source src="vod/vod (3).mp4" type="video/mp4">
                     웹 브라우저가 video를 인식하지 못합니다. 업그레이드하세요.
                 </video>
-                <div class="myvideo-btn"></div>
+                <div class="myvideo-btn" data-vdo="vod (3).mp4"></div>
                 <p class="text-center">Australia`s Most Beautiful<br>
                     Island on a Budget</p>
             </div> 
+            <!--비디오 팝업창-->
+            <div class="vdo-popup-back" id="vdo-back">
+                <div class="vdo-popup">
+                    <video controls id="viewvideo">
+                        <source src="" type="video/mp4">
+                    </video>
+                </div>
+            </div>
         </div>   
     </section>
     <section class="best" id="best">

@@ -78,8 +78,38 @@ ul.main{
     padding: 0;
     display: flex;
     text-transform: uppercase;
-    width: 520px;
+    width: 620px;
     justify-content: space-between;
+}
+ul.main>li{
+    height: 35px;
+}
+.sub{
+    position: absolute;
+    z-index: 20;
+    background: rgba(255, 255, 255, .9);
+    border-radius: 10px;
+    padding: 30px;
+    width :150px;
+    top: 30px;
+    left: -20px;
+    display: none;
+}
+.sub::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width:0;
+    height: 0;
+    border: 10px solid transparent;;
+    border-bottom: 10px solid rgba(255,255,255, .9);
+    top: -18px;
+    left: 60px;
+}
+.sub a{
+    display: block;
+    padding: 5px 0;
+    border-bottom: 1px dashed #ddd;
 }
 a.logo{
     display: block;
@@ -291,7 +321,34 @@ h1.partner-title{
     width: 300px;
     left: calc(50% - 150px);
 }
+.vdo-popup-back{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .5);
+    z-index: 3;
+    display: none;
+}
+.vdo-popup{
+    background-color: #fff;
+    width: 800px;
+    height: 500px;
+    position: absolute;
+    z-index: 4;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, .5);
+}
+.vdo-popup video{
+    width: 100%;
+    height: 100%;
 
+}
 /****************** Best Places ******************/
 .best{
     margin-top: 90px;
