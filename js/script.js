@@ -37,9 +37,5 @@ $(document).ready(function(){
     });
 
 
-    $(".escbtn").on("click",function(){
-        $("#viewvideo").find('source').attr("src","");
-        $('.vdo-popup-back').fadeOut(400);
-    });
 
 });
