@@ -349,6 +349,23 @@ h1.partner-title{
     height: 100%;
 
 }
+.escbtn{
+    position: absolute;
+    z-index: 5;
+    width: 40px;
+    height: 40px;
+    top: 0;
+    left: calc(90% + 40px);
+    background-color: #474747;
+}
+.escbtn>i{
+    position: absolute;
+    color: #ffffff;
+    font-size: 50px;
+    top: -7px;
+    left: -6px;
+
+}
 /****************** Best Places ******************/
 .best{
     margin-top: 90px;
